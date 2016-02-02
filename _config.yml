@@ -40,3 +40,6 @@ sass:
 # Disqus Comments
 disqus_short_name: liamhorne
 disqus_show_comment_count: true
+
+# Google Analytics
+google_analytics_tracking_id: UA-42840264-1
