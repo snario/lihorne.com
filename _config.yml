@@ -1,0 +1,38 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: lihorne.com
+author: Liam Horne
+author_link: https://lihorne.com
+author_description: Email me at liam at piinpoint dot com
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Anything that comes to mind that I think is worth sharing.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://lihorne.com" # the base hostname & protocol for your site
+
+# Picturefill
+# A responsive image polyfill: http://scottjehl.github.io/picturefill/
+picturefill: false
+
+# Typography
+# To use, publish a kit and enter the ID here. If you do not wish to use Typekit,
+# leave this ID blank
+typekit_kit_id: kwf5dox
+
+# Build settings
+gems: [jekyll-paginate]
+markdown: kramdown
+permalink: pretty
+
+# Pagination
+paginate: 5
+
+# Sass
+sass:
+    style: :compressed

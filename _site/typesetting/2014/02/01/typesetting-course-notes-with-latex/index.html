@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Typesetting with LaTeX</title>
+  <meta name="description" content="">
+  
+  
+      <script>
+      (function(d) {
+         var config = {
+            kitId: 'kwf5dox',
+            scriptTimeout: 3000,
+            async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+  
+  <link rel="shortcut icon" type="image/png" href="https://lihorne.com/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Sanchez" type="text/css">
+  <link rel="stylesheet" href="/css/screen.css">
+  <link rel="canonical" href="https://lihorne.com/typesetting/2014/02/01/typesetting-course-notes-with-latex/">
+  <link rel="alternate" type="application/rss+xml" title="lihorne.com" href="https://lihorne.com/feed.xml">
+</head>
+
+    <body class="is-offset ">
+        <header role="banner">
+    <a href="/" id="banner" title="lihorne.com">
+        <h1>lihorne.com</h1>
+    </a>
+</header>
+
+        <section role="main">
+            <article class="post">
+    <header>
+        <a href="/typesetting/2014/02/01/typesetting-course-notes-with-latex/">
+            <h1 class="post-title">Typesetting with LaTeX</h1>
+        </a>
+        <time datetime="2014-02-01T07:22:09+00:00" class="post-date">Saturday, February 1, 2014</time>
+    </header>
+    <div class="post-body">
+        <!--* list element with functor item
+//{:toc}-->
+
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>One of the first courses that a student in the Mathematics faculty at the University of Waterloo takes is MATH 135 / 145 (Algebra), a course in learning how to write concise mathematical proofs. The professor that directed this course decided in my year of taking it to provide <code class="highlighter-rouge">.tex</code> templates for students to use to typeset their assignments. I had never heard of or seen anyone use LaTeX before but thought I’d take a shot at it so I didn’t have to write anything down for my first year Calculus and Algebra weekly assignments.</p>
+
+<p>First,  what is LaTeX ? Essentially, LaTeX is to a book what a set of blueprints is to a building. It doesn’t have to be a book though, it can be an academic paper, an article, a homework assignment, or really any document at all. In the sense that you produce documents using LaTeX, it is a lot like Microsoft Word. A major difference however is that with Word, what you see is what you get, meaning that you are editing a document that looks exactly like what you would print. With LaTeX, you use a markup language to precisely format your document and write the content, and then run a program on what you’ve written which will output a typeset document.</p>
+
+<p>For the most part, LaTeX is used in scientific publications, and very often in mathematics papers; it is most popular in academia. The reason it is so useful for mathematicians and scientists is because dealing with mathematical notation is much easier than dealing with some equation editor. Additionally, LaTeX is a massive project and comes with many libraries and packages that can be used with make references, bibliographies, tables of content, sections, tables, figures, etc much easier to format and automate.</p>
+
+<p>For example if I were to write using LaTeX:</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>This is Euler's equation: <span class="p">$</span><span class="nb">e</span><span class="p">^{</span><span class="nb">i</span><span class="nv">\pi</span><span class="p">}</span><span class="nb"> </span><span class="o">+</span><span class="nb"> </span><span class="m">1</span><span class="nb"> </span><span class="o">=</span><span class="nb"> </span><span class="m">0</span><span class="p">$</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>it would be typeset to become:</p>
+
+<script type="math/tex; mode=display">\mbox{This is Euler's equation: } e^{i\pi} + 1 = 0</script>
+
+<p>This can get really messy really quickly, but once you learn the basics of the language and use it frequently, it becomes much faster than writing or using an equation editor. For example, Schrödinger’s equation:</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>-<span class="k">\frac</span><span class="p">{</span><span class="k">\hbar</span><span class="p">}{</span>2m<span class="p">}</span><span class="k">\f</span><span class="p">{</span><span class="k">\di</span><span class="p">^</span>2 <span class="k">\Psi</span>(x,t)<span class="p">}{</span><span class="k">\di</span> x<span class="p">^</span>2<span class="p">}</span>+U(x)<span class="k">\Psi</span>(x,t)=i<span class="k">\hbar\frac</span><span class="p">{</span><span class="k">\di\Psi</span>(x,t)<span class="p">}{</span><span class="k">\di</span> t<span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<script type="math/tex; mode=display">- \frac{\hbar}{2m} \frac{\partial^2 \Psi(x,t)}{\partial x^2} + U(x)\Psi(x,t) = i \hbar \frac{\partial \Psi(x,t)}{\partial t}</script>
+
+<p>If you’re interested in learning the language and getting started using LaTeX, my advice would just be to force yourself to do an assignment using it or otherwise to write a report or paper with it. The best way to learn how to use it is to just dive right in and try your best to figure things out as you go. A quick way to do this would be to check out <a href="http://www.writelatex.com">writeLaTeX</a>, an online tool for writing LaTeX. If you’re interested in an in-depth beginner’s guide, try using <a href="http://www.cs.princeton.edu/courses/archive/spr10/cos433/Latex/latex-guide.pdf">this one Princeton University</a>.</p>
+
+<h1 id="workflow">Workflow</h1>
+
+<p>Since typesetting my assignments for that Algebra course in my first term, I began writing my assignments for all of my other courses in LaTeX as well, and then in Fall 2013 decided to try to typeset not just all of my assignments, but all of my course notes too. Since LaTeX is so versatile, I was able to take notes of equations in calculus, graphs in combinatorics, and code in a few computer science courses. If you’re interested in these notes or in an example of what a typeset document looks like, they’re posted on this website <a href="http://lihorne.com/course-notes">right here</a>.</p>
+
+<p>To begin, I use the <a href="http://tug.org/mactex/">MacTex distribution</a> (it really is 2.3GB, LaTeX is huge) on my computer. The way I manage to take notes is by using <a href="http://www.sublimetext.com/">Sublime Text</a> with the PDF reader <a href="http://skim-app.sourceforge.net/">Skim</a>. There is a package for Sublime text called <a href="https://github.com/SublimeText/LaTeXTools">LaTeXTools</a> which makes this setup really quick and easy. To install LaTeXTools you will need <a href="https://sublime.wbond.net/">Package Control</a> for Sublime as well.</p>
+
+<p>Once everything is in order, you should be able to hit ⌘-B within Sublime Text on a <code class="highlighter-rouge">.tex</code> file and have it compile your code to PDF. Now, this post is meant to be about how to quickly take course notes using LaTex, so I’ll go through a few methods I used to do that this semester and really quickly. First though, I’d like to mention that the main inspiration my course notes are the notes that <a href="http://triple-involution.blogspot.ca/p/notes.html">Michael Baker has on his website </a>, for any pure mathematics students at the University of Waterloo, they are perfect.</p>
+
+<h1 id="template">Template</h1>
+
+<p>When I started taking course notes, I knew that it would take a lot of time to deal with little templating issues such as dealing with sections and revisions, links to pages, definitions, theorems, counters, code, etc that would be a waste of time during class to fix. So, I made <a href="http://www.github.com/snario/notes-template">this course notes template</a> which asks for only a little information and then lets you write away to actually copy down notes. For example,</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="code"><pre><span class="k">\newcommand</span><span class="p">{</span><span class="k">\thiscoursecode</span><span class="p">}{</span>MATH 136<span class="p">}</span>
+<span class="k">\newcommand</span><span class="p">{</span><span class="k">\thiscoursename</span><span class="p">}{</span>Linear Algebra<span class="p">}</span>
+<span class="k">\newcommand</span><span class="p">{</span><span class="k">\thisprof</span><span class="p">}{</span>Prof. Dan Wolczuk<span class="p">}</span>
+<span class="k">\newcommand</span><span class="p">{</span><span class="k">\me</span><span class="p">}{</span>Liam Horne<span class="p">}</span>
+<span class="k">\newcommand</span><span class="p">{</span><span class="k">\thisterm</span><span class="p">}{</span>Winter 2013<span class="p">}</span>
+<span class="k">\newcommand</span><span class="p">{</span><span class="k">\website</span><span class="p">}{</span>LIHORNE.COM<span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>produces this:</p>
+
+<div class="post-image">
+    <img src="http://i.imgur.com/D6zKY1x.png" alt="notes" />
+</div>
+
+<p>Hopefully this will be useful if you’re trying to save time and get started right away. There are also many benefits of using this template, for example you can quickly make definitions or theorems from some settings in <code class="highlighter-rouge">notes.sty</code>, for example</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="nt">\begin{defn}</span>[graph]<span class="k">\label</span><span class="p">{</span>graph<span class="p">}</span>
+A <span class="k">\textbf</span><span class="p">{</span>graph<span class="p">}</span> <span class="p">$</span><span class="nb">G</span><span class="p">$</span> is a finite set <span class="p">$</span><span class="nb">V</span><span class="o">(</span><span class="nb">G</span><span class="o">)</span><span class="p">$</span> of elements called <span class="k">\textbf</span><span class="p">{</span>vertices<span class="p">}</span>,
+together with a set <span class="p">$</span><span class="nb">E</span><span class="o">(</span><span class="nb">G</span><span class="o">)</span><span class="p">$</span> of unordered pairs of distinct vertices.
+<span class="nt">\end{defn}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>The argument inside the square brackets will be the official name of whatever you’re defining, and the <code class="highlighter-rouge">\label{graph}</code> part defines a quick and unique label for you to use as reference later in the document. For example, if I want to reference back (create a link to) the definition of a graph, then I would write <code class="highlighter-rouge">\nameref{graph}</code> and a link would be typeset.</p>
+
+<h2 id="code">Code</h2>
+
+<p>When it comes to typesetting code, the best package to use is called <a href="ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf">Listings</a>, which offers all sort of customization for ways to display code. To start, define your favourite style with <code class="highlighter-rouge">lstset</code>, you can customize the language it recognizes, any borderes, line numbers, styles for different types of code, background colours and much more.</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></td><td class="code"><pre><span class="k">\lstset</span><span class="p">{</span>
+    language=c++,
+    basicstyle=<span class="k">\ttfamily\small</span>,
+    breaklines=true,
+    prebreak=<span class="k">\raisebox</span><span class="p">{</span>0ex<span class="p">}</span>[0ex][0ex]<span class="p">{</span><span class="k">\ensuremath</span><span class="p">{</span><span class="k">\hookleftarrow</span><span class="p">}}</span>,
+    frame=none,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    morecomment=[l][<span class="k">\color</span><span class="p">{</span>magenta<span class="p">}</span>]<span class="p">{</span><span class="k">\#</span><span class="p">}</span>,
+    keywordstyle=<span class="k">\color</span><span class="p">{</span>blue<span class="p">}</span><span class="k">\bfseries</span>,
+    stringstyle=<span class="k">\color</span><span class="p">{</span>green!50!black<span class="p">}</span>,
+    commentstyle=<span class="k">\color</span><span class="p">{</span>gray<span class="p">}</span><span class="k">\itshape</span>,
+    numbers=left,
+    captionpos=t,
+    backgroundcolor=<span class="k">\color</span><span class="p">{</span>white<span class="p">}</span>,
+    escapeinside=<span class="p">{</span><span class="k">\%*</span><span class="p">}{</span>*)<span class="p">}</span>
+<span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Then, inside your main document, write code inside a <code class="highlighter-rouge">lstlistings</code> block:</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nt">\begin{lstlisting}</span>[language=lisp]
+    (define sum (lambda args (foldr + 0 args)))
+<span class="nt">\end{lstlisting}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>You can also specify a different setting for something you set earlier if you want a one-time code block setting. The package handles syntax colouring by having a list of keywords saved for the many languages it supports, you can also add additional keywords if you’d like.</p>
+
+<h2 id="graph-theory">Graph Theory</h2>
+
+<p>Trying to draw graphs in real time during class is definitely the most irritating part about using LaTeX, as there is no way of getting around the fact that it will just always be quicker to draw it by hand. If you’d still like to typeset them however, the best way to do it I found is to use <a href="http://cremeronline.com/LaTeX/minimaltikz.pdf">TikZ</a>. Essentially, you will have to define nodes on a 2D plane, then define connections between nodes. The best way to do this quickly is to define a macro within Sublime Text, something short like <code class="highlighter-rouge">grph</code> that when typed expands out to a skeleton for the graph. Without writing a cleaner solution, this is the quickest I could do it in class. An example of the Petersen graph:</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></td><td class="code"><pre><span class="nt">\begin{center}</span>
+    <span class="nt">\begin{tikzpicture}</span>
+    [scale =.8, auto=left, every node/.style=<span class="p">{</span>circle, fill=blue!20<span class="p">}</span>]
+    <span class="k">\node</span> (a) at (0,1) <span class="p">{}</span>;
+    <span class="k">\node</span> (b) at (1,0)  <span class="p">{}</span>;
+    <span class="k">\node</span> (e) at (-1,0)  <span class="p">{}</span>;
+    <span class="k">\node</span> (d) at (-0.5,-1) <span class="p">{}</span>;
+    <span class="k">\node</span> (c) at (0.5,-1)  <span class="p">{}</span>;
+    <span class="k">\node</span> (A) at (0,2) <span class="p">{}</span>;
+    <span class="k">\node</span> (B) at (2,0)  <span class="p">{}</span>;
+    <span class="k">\node</span> (E) at (-2,0)  <span class="p">{}</span>;
+    <span class="k">\node</span> (D) at (-1.5,-2) <span class="p">{}</span>;
+    <span class="k">\node</span> (C) at (1.5,-2)  <span class="p">{}</span>;
+
+    <span class="k">\foreach</span> <span class="k">\from</span>/<span class="k">\to</span> in <span class="p">{</span>A/B,B/C,C/D,D/E,A/a,B/b,C/c,D/d,E/e,a/c,b/e,c/e,d/a,E/A,d/b<span class="p">}</span>
+      <span class="k">\draw</span> (<span class="k">\from</span>) -- (<span class="k">\to</span>);
+    <span class="nt">\end{tikzpicture}</span>
+<span class="nt">\end{center}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Which produces a graph looking like:</p>
+
+<div class="post-image">
+    <img src="http://i.imgur.com/pRrXGGE.png" alt="petersen" />
+</div>
+
+<p>You have the option of giving a node a label which would appear inside the circle, in this case the nodes don’t have any. There are also a few special cases, for example with matchings or covers. You may want to specify a specific set of nodes to be coloured differently or a set of edges to be drawn with thick lines. These should be farely quick and easy with this method, for example a matching could be drawn with a second <code class="highlighter-rouge">\foreach</code> loop and the set of edges that are matching, then a <code class="highlighter-rouge">[line width=1mm]</code> tag.</p>
+
+<h2 id="natural-deduction">Natural Deduction</h2>
+
+<p>If you ever take a course in logic, you will encounter natural deduction. One of the most common notations for natural deduction is called ‘flag-notation’ and the best way to mimic that notation in LaTeX is to use a package called <a href="https://svn.win.tue.nl/trac/fmlatex/wiki/Package/Flagderiv">Flagderiv</a>. The syntax looks a little like this:</p>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre><span class="nt">\begin{flagderiv*}</span>
+    <span class="k">\step</span><span class="p">{</span>pre<span class="p">}{</span>(p <span class="k">\lor</span> q) <span class="k">\ar</span> r<span class="p">}{</span>Premise<span class="p">}</span>
+    <span class="k">\assume</span><span class="p">{</span>p<span class="p">}{</span>p<span class="p">}{</span>Assumption<span class="p">}</span>
+      <span class="k">\step</span><span class="p">{</span>porq<span class="p">}{</span>(p <span class="k">\lor</span> q)<span class="p">}{$</span><span class="o">(</span><span class="nv">\lor</span><span class="nb"> </span><span class="o">+)</span><span class="p">$</span> on <span class="k">\ref</span><span class="p">{</span>p<span class="p">}}</span>
+      <span class="k">\step</span><span class="p">{</span>r<span class="p">}{</span>r<span class="p">}{$</span><span class="o">(</span><span class="nv">\ar</span><span class="nb"> </span><span class="o">-)</span><span class="p">$</span> with <span class="k">\ref</span><span class="p">{</span>porq<span class="p">}</span> and <span class="k">\ref</span><span class="p">{</span>pre<span class="p">}}</span>
+    <span class="k">\conclude</span><span class="p">{}{</span>(p <span class="k">\ar</span> r)<span class="p">}{}</span>
+<span class="nt">\end{flagderiv*}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Which produces a proof that looks like:</p>
+
+<div class="post-image">
+    <img src="http://i.imgur.com/4zYNXnL.png" alt="nd" />
+</div>
+
+<h2 id="other-things">Other Things</h2>
+
+<p>There are a lot of little things in LaTeX that might take some time when you’re typesetting a report or course notes, and there’s no way to cover all of them but here are a few that might be helpful:</p>
+
+<ul>
+  <li>Substacks</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="k">\lim</span><span class="p">_{</span><span class="k">\substack</span><span class="p">{</span><span class="k">\Delta</span> x <span class="k">\rightarrow</span> 0 <span class="k">\\</span> <span class="k">\Delta</span> y <span class="k">\rightarrow</span> 0<span class="p">}}</span> <span class="k">\sum</span><span class="p">_{</span>i =1<span class="p">}^</span>n f(x<span class="p">_</span>1,y<span class="p">_</span>i) <span class="k">\Delta</span> x<span class="p">_</span>i <span class="k">\Delta</span> y<span class="p">_</span>i<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<script type="math/tex; mode=display">\lim_{\substack{\Delta x \rightarrow 0 \\ \Delta y \rightarrow 0}} \sum_{i =1}^n f(x_1,y_i) \Delta x_i \Delta y_i</script>
+
+<ul>
+  <li>Matrices</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre>DF(x<span class="p">_</span>1, <span class="k">\ldots</span>, x<span class="p">_</span>n) = <span class="k">\mtx</span><span class="p">{</span>D<span class="p">_</span>1F<span class="p">_</span>1 <span class="p">&amp;</span> D<span class="p">_</span>2F<span class="p">_</span>1 <span class="p">&amp;</span> <span class="k">\cdots</span> <span class="p">&amp;</span> D<span class="p">_</span>nF<span class="p">_</span>1 <span class="k">\\</span>
+                            D<span class="p">_</span>1F<span class="p">_</span>2 <span class="p">&amp;</span> D<span class="p">_</span>2F<span class="p">_</span>2 <span class="p">&amp;</span>  <span class="k">\cdots</span> <span class="p">&amp;</span> D<span class="p">_</span>nF<span class="p">_</span>2 <span class="k">\\</span>
+                            <span class="k">\vdots</span> <span class="p">&amp;</span> <span class="k">\vdots</span> <span class="p">&amp;</span> <span class="k">\ddots</span> <span class="p">&amp;</span> <span class="k">\vdots</span> <span class="k">\\</span>
+                            D<span class="p">_</span>1F<span class="p">_</span>n <span class="p">&amp;</span> D<span class="p">_</span>2F<span class="p">_</span>n <span class="p">&amp;</span> <span class="k">\cdots</span> <span class="p">&amp;</span> D<span class="p">_</span>nF<span class="p">_</span>n<span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<script type="math/tex; mode=display">DF(x_1, \ldots, x_n) = \begin{bmatrix}D_1F_1 \quad D_2F_1 \quad \cdots \quad D_nF_1 \\ D_1F_2 \quad D_2F_2 \quad  \cdots \quad D_nF_2 \\ \vdots \quad \vdots \quad \ddots \quad \vdots \\ D_1F_n \quad D_2F_n \quad \cdots \quad D_nF_n\end{bmatrix}</script>
+
+<ul>
+  <li>Fancy Tables</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-latex" data-lang="latex"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre></td><td class="code"><pre><span class="nt">\begin{tabular}</span><span class="p">{</span>c | c | c <span class="p">}</span>
+  Name <span class="p">&amp;</span> <span class="p">$</span><span class="nv">\vdash</span><span class="p">$</span> Notation <span class="p">&amp;</span> Inference Notation <span class="k">\\</span>
+  <span class="k">\hline</span>
+  <span class="k">\hline</span>
+  <span class="k">\ </span><span class="p">&amp;&amp;</span><span class="k">\\</span>
+  <span class="p">$</span><span class="nv">\forall</span><span class="p">$</span>-elimination (<span class="p">$</span><span class="nv">\forall</span><span class="nb"> </span><span class="o">-</span><span class="p">$</span>) <span class="p">&amp;</span> If <span class="p">$</span><span class="nv">\Sigma</span><span class="nb"> </span><span class="nv">\vdash</span><span class="nb"> </span><span class="nv">\forall</span><span class="nb"> x. </span><span class="nv">\varphi</span><span class="p">$</span>
+  then <span class="p">$</span><span class="nv">\Sigma</span><span class="nb"> </span><span class="nv">\vdash</span><span class="nb"> </span><span class="nv">\phi</span><span class="o">[</span><span class="nb">x</span><span class="o">/</span><span class="nb">t</span><span class="o">]</span><span class="p">$</span> <span class="p">&amp;</span> <span class="p">$</span><span class="nv">\displaystyle</span><span class="p">{</span><span class="nv">\f</span><span class="p">{</span><span class="nv">\forall</span><span class="nb"> x. </span><span class="nv">\phi</span><span class="p">}{</span><span class="nv">\varphi</span><span class="o">[</span><span class="nb">x</span><span class="o">/</span><span class="nb">t</span><span class="o">]</span><span class="p">}}$</span> <span class="k">\\</span><span class="na">[3ex]</span>
+  <span class="k">\hline</span>
+  <span class="k">\hline</span>
+  <span class="k">\ </span><span class="p">&amp;&amp;</span><span class="k">\\</span>
+  <span class="p">$</span><span class="nv">\forall</span><span class="p">$</span>-introduction (<span class="p">$</span><span class="nv">\forall</span><span class="nb"> </span><span class="o">+</span><span class="p">$</span>) <span class="p">&amp;</span> If <span class="p">$</span><span class="nv">\Sigma</span><span class="nb"> </span><span class="nv">\vdash</span><span class="nb"> </span><span class="nv">\varphi</span><span class="o">[</span><span class="nb">x</span><span class="o">/</span><span class="nb">u</span><span class="o">]</span><span class="p">$</span>
+  then <span class="p">$</span><span class="nv">\Sigma\vdash\forall</span><span class="nb"> x.</span><span class="nv">\varphi</span><span class="p">$</span> <span class="p">&amp;</span> <span class="p">$</span><span class="nv">\displaystyle\f</span><span class="p">{</span><span class="nv">\varphi</span><span class="o">[</span><span class="nb">x</span><span class="o">/</span><span class="nb">u</span><span class="o">]</span><span class="p">}{</span><span class="nv">\forall</span><span class="nb"> x.</span><span class="nv">\varphi</span><span class="p">}$</span><span class="k">\\</span><span class="na">[3ex]</span>
+  <span class="k">\hline</span>
+  <span class="k">\hline</span>
+<span class="nt">\end{tabular}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<div class="post-image">
+    <img src="http://i.imgur.com/oRmKvZU.png" alt="borzoo" />
+</div>
+
+<p>Okay, so I’ve tried to list as many helpful tools and resources for taking course notes using LaTeX that I’ve found or used in my experience with it, and I hope that these will be useful for anybody interested in trying out LaTeX in the future for their assignments, course notes, or any other document. It is a very powerful tool that can probably be used in every situation that you’ve encountered in school before where you had to write an essay, a paper, report, or even a presentation. Once you get the hang of it, you’ll be able to make these sorts of documents much faster and much easier than before. For now, see <a href="http://www.lihorne.com/course-notes">my course notes</a> if you’re interested.</p>
+
+    </div>
+    <footer class="post-footer">
+        
+    </footer>
+</article>
+
+
+        </section>
+        <footer id="footer">
+    <strong>
+        <a href="https://lihorne.com" target="_blank">
+            Liam Horne
+        </a>
+    </strong>
+    <p class="legal">Email me at liam at piinpoint dot com</p>
+</footer>
+
+        <script type="text/javascript" src="/js/galileo.js"></script>
+    </body>
+</html>

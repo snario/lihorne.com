@@ -1,0 +1,50 @@
+---
+layout: home
+title: Home
+date: YYYY-MM-DD HH:MM:SS wew
+---
+
+<div class="posts">
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">
+                <span class="left">
+                    <strong>{{ post.title }}</strong>
+                </span>
+                <span class="right">
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                        {{ post.date | date: "%A, %B %-d, %Y" }}
+                    </time>
+                </span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="pages">
+    <ul>
+        <li>
+            <a
+                target="_blank"
+                href="https://github.com/snario">
+                Github
+            </a>
+        </li>
+        <li>
+            <a
+                target="_blank"
+                href="https://www.linkedin.com/in/liamhorne">
+                LinkedIn
+            </a>
+        </li>
+        <li>
+            <a
+                target="_blank"
+                href="https://github.com/snario">
+                Course Notes
+            </a>
+        </li>
+    </ul>
+</div>

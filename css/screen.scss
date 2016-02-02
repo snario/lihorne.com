@@ -1,0 +1,52 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Typography
+$base-font-family: "adobe-caslon-pro", "Adobe Caslon Pro", serif;
+$caption-font-family: "ltc-bodoni-175", "Libre Baskerville", serif;
+$banner-font-family: "Sanchez", serif;
+$title-font-family: "Libre Baskerville", serif;
+$base-font-size:   18px;
+$base-font-weight: 400;
+$base-line-height: 1;
+
+// Colours
+$text-color:       #222;
+$caption-text-color: #444;
+$border-color: #979797;
+$background-color: #fefefe;
+$content-width:    750px;
+$hover-color: #443E40;
+$legal-color: #818181;
+
+// Layout
+$layout-width: 750px;
+
+// Breakpoints
+$desktop-breakpoint: $layout-width / 0.9;
+$image-splitting-breakpoint: 510px;
+
+// Banner
+$banner-width: 182px;
+$banner-height: 503px;
+$banner-margin: 50px;
+$banner-border-width: 3px;
+$banner-border-offset: 2px;
+
+// Images
+// Note that extensions are omitted for use in retina-background-image mixin
+$img-separator: '{{ site.baseurl }}/img/separator';
+$img-banner: '{{ site.baseurl }}/img/banner';
+$img-dude: '{{ site.baseurl }}/img/dude';
+$img-location: '{{ site.baseurl }}/img/icon-location';
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "vendors",
+        "base",
+        "layout",
+        "modules"
+;

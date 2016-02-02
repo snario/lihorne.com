@@ -1,0 +1,7 @@
+@import "modules/legal/variables";
+@mixin galileo-legal {
+    .legal {
+        color: $legal-text-color;
+        font-style: italic;
+    }
+}
