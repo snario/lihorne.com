@@ -3,3 +3,7 @@ layout: default
 ---
 
 {% include post.html post=page content=content %}
+
+{% if page.comments %}
+    {% include disqus.html %}
+{% endif %}

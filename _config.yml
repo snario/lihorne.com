@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: lihorne.com
+title:
 author: Liam Horne
 author_link: https://lihorne.com
 author_description: Email me at liam at piinpoint dot com
@@ -36,3 +36,7 @@ paginate: 5
 # Sass
 sass:
     style: :compressed
+
+# Disqus Comments
+disqus_short_name: liamhorne
+disqus_show_comment_count: true
