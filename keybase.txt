@@ -1,0 +1,80 @@
+==================================================================
+https://keybase.io/liamhorne
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://lihorne.com
+  * I am liamhorne (https://keybase.io/liamhorne) on keybase.
+  * I have a public key with fingerprint 30FC 640B C0A3 51B2 FCB9  693F 7335 D28F BBFB 7CE7
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010154cb8632485e63f7fee1947f8096a54a0213f3de761155f44b634d3b5f89dc930a",
+            "fingerprint": "30fc640bc0a351b2fcb9693f7335d28fbbfb7ce7",
+            "host": "keybase.io",
+            "key_id": "7335d28fbbfb7ce7",
+            "kid": "010154cb8632485e63f7fee1947f8096a54a0213f3de761155f44b634d3b5f89dc930a",
+            "uid": "ba8279e32d403a25c2d91ec0d7868800",
+            "username": "liamhorne"
+        },
+        "revoke": {
+            "sig_ids": [
+                "ac3198ce7e4a393eff0977e33a42204ec53b4732cf5e0e9b78f52a347db0041f0f"
+            ]
+        },
+        "service": {
+            "hostname": "lihorne.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1471267811,
+    "expire_in": 157680000,
+    "prev": "17941b07c682ac6f183c563ae3524c39e5808e844e1602f903319984079a592f",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.55
+Comment: https://keybase.io/crypto
+
+yMOFAnicrZJ7UFRVHMd3FzEDKioDLGXkKg8TmXPvuc+1sUzJMmwIR+MhbfdxLlwX
+9i77AkPCsJlkFXuBEkNNCEiAisjDGF4BkYUNOOMADTMpiSBhFqGCjibdZaq/+rO/
+zpxzvr/P7/v7nvPNI146H3370B+xWdZ7QfrzXTNO3Rv1PWPZmKBKezBjNmZGCwtK
+k5DdYTIrEmbEAA5wihQFloYEyVKIhjIjI4RzJCOzgKN5iuQBgUMZSoihcZyiZJIU
+aEhKUKBklpNEDgIei8RkxZKCbFabYnFoWAhkkSaBIAIeUrhAyKLA0ZzGhpCSCFYW
+BFlgRMRohamq3VOhmRN4O4pSVO1M25gW7P2H/n/27VzACTxLMByChEQCyBOUSEgc
+jkQgMSzNsgB4hHZks/DpSFOnKXx6qmqzICwnErMhl2pGnmDtSorm2o4ZkzBehDjH
+aoYRyUMOIlkGHMMgCHmSIACJRAoKJAMJUaYQQJzAsDJF8JBkJAEAEpeBjCVrbK2l
+SxEX4J6Y/m2/0DxKVNM1X1ab6lBFNU27SHU4rEaPJ8ceq0eYiQTT3wiToFgk7Ym0
+Ahey2RXVghlxTSk6FA8TJxmcoBkWxyMxlGVVbMikeBQUQ2vTA+Bpg1waEmc4EhcA
+I9IswYu0jLNQpGjII0gRpAg5RLGARSxJIpwGhMwBqAXBsSRgOJ7iCBnzDJVhUTEj
+rdnkUzSkFpuFdzhtWprdXbsW6fQ+usXeBs/X1fk87P/Ph75Q669zvz4enPfMgR8r
+oy8xs9d+bR+r6A5IzTbfuN0zcMm8qDd66+YthwzHnpy7vMJvPq56Gh084swvCi5+
+f8gv2Pf5t2+VJQf0DLuV/d5zIXH63gn5QllbcfD1gi8nMeP2WItt71T4/JqXj7bc
+6Z/oX9uUkFLxkdfG42GU1+HCxL4nbld1xPQ+2HB/+M+rjqwN1VtG2Kdj9Jaq8waD
+bbat/EWzQbk6mz9adzL8h/2ONtfX7bUEmhqsLVnWWpOx+rn1gVXn3mr+uYFrCnvn
+4rHGgHLFe9PqknK/Facf2qS0nnC2nVzjJZIjNT1FOYOVp5afJq73lByPAHfc+5qS
+5Ir5XZO5X4yi0oOhcXfVxMLS+A5dK1dgairszx/IRYFTu4OCY4sKB56id6QGGrcu
+hctrdguP+3+bWZ311b2OdcmHdkQlLatc+dpgYHJErndF19GWbXDkvbMzhm3j9SEJ
+dS1hO9NXHSmVsUYKuhLrX7lfP97ppnxfCHLG1l1cpRoKQvt+95tZ6bWz7dS7vxwY
+Kwj/7CXfdXc/GI2pfYD2/bQkoilc3Ixb3rwZ1N14Occ9uRe/9Wmeodk4vHZJwsfN
+gTNlN591Tj/WifW/+tvh8MzQxRlBQ9MpZzrzQuzTZENx3TWD/uyjob5XogfPxdds
+nB4+IV355LszG4vzb7TGt6z/8POJ0OpId3ffXM332wOWNvwFMQvdhQ==
+=DbXB
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/liamhorne
+
+==================================================================
