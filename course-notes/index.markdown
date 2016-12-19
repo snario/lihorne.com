@@ -12,14 +12,8 @@ footer: true
     <img src="http://i.imgur.com/efXOmio.png" alt="notes"/>
 </div>
 
-I write these notes during class and am providing them to interested students and professors at absolutely no cost. Please [**let me know**](mailto:lihorne@uwaterloo.ca) if they've been helpful for you, and as well if there are any errors that I should fix.
+I wrote these notes during my time at the University of Waterloo and am providing them to interested students and professors at absolutely no cost. Please [**let me know**](mailto:lihorne@uwaterloo.ca) if they've been helpful for you. Feel free to [**contribute**](https://github.com/snario/course_notes) too.
 
-<br>
-
-
-Feel free to <strong><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BKPRJ96TMWLXS" target="_blank">donate</a></strong>, I'd greatly appreciate it.
-
-<br>
 [S14] [[**pdf**](https://raw.githubusercontent.com/snario/course_notes/master/phys234/phys234.pdf)] PHYS 234, Quantum Physics I
 
 [F13] [[**pdf**](https://raw.githubusercontent.com/snario/course_notes/master/math239/math239.pdf)] MATH 239, Introduction to Combinatorics

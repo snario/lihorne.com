@@ -42,6 +42,10 @@
         }
     }
 
+    h1 {
+        font-family: $banner-font-family;
+    }
+
     .post-date {
         display: block;
         border-top: 1px solid $border-color;
@@ -229,7 +233,7 @@ figure.highlight {
     border: 4px solid #F7F7F7;
     border-radius: 10px;
     pre {
-        font-size: 0.8rem;
+        font-size: 1rem;
         .gutter.gl {
             padding-right: 15px;
             padding-left: 15px;

@@ -38,7 +38,7 @@ This can get really messy really quickly, but once you learn the basics of the l
 
 $$- \frac{\hbar}{2m} \frac{\partial^2 \Psi(x,t)}{\partial x^2} + U(x)\Psi(x,t) = i \hbar \frac{\partial \Psi(x,t)}{\partial t}$$
 
-If you're interested in learning the language and getting started using LaTeX, my advice would just be to force yourself to do an assignment using it or otherwise to write a report or paper with it. The best way to learn how to use it is to just dive right in and try your best to figure things out as you go. A quick way to do this would be to check out [writeLaTeX](http://www.writelatex.com), an online tool for writing LaTeX. If you're interested in an in-depth beginner's guide, try using [this one Princeton University](http://www.cs.princeton.edu/courses/archive/spr10/cos433/Latex/latex-guide.pdf).
+If you're interested in learning the language and getting started using LaTeX, my advice would just be to force yourself to do an assignment using it or otherwise to write a report or paper with it. The best way to learn how to use it is to just dive right in and try your best to figure things out as you go. A quick way to do this would be to check out [writeLaTeX](http://www.writelatex.com), an online tool for writing LaTeX. If you're interested in an in-depth beginner's guide, try using [this one from Princeton University](http://www.cs.princeton.edu/courses/archive/spr10/cos433/Latex/latex-guide.pdf).
 
 
 #  Workflow

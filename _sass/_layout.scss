@@ -93,6 +93,13 @@ section[role="home"] {
         ul li a { display: flex; }
         .left { flex-grow: 1; text-align: left; }
         .right { flex-grow: 2; text-align: right; }
+        .date {
+          font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+          font-size: 11px;
+          color: #999;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
     }
 
     @include min-breakpoint($desktop-breakpoint) {

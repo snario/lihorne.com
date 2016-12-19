@@ -4,25 +4,25 @@
 @charset "utf-8";
 
 // Typography
-$base-font-family: "adobe-caslon-pro", "Adobe Caslon Pro", serif;
-$caption-font-family: "ltc-bodoni-175", "Libre Baskerville", serif;
-$banner-font-family: "Sanchez", serif;
-$title-font-family: "Libre Baskerville", serif;
-$base-font-size:   18px;
+$base-font-family: "Georgia", serif;
+$caption-font-family: "Georgia", serif;
+$banner-font-family: "Lato", serif;
+$title-font-family: "Lato", serif;
+$base-font-size:   19px;
 $base-font-weight: 400;
-$base-line-height: 1;
+$base-line-height: 1.6em;
 
 // Colours
 $text-color:       #222;
 $caption-text-color: #444;
 $border-color: #979797;
 $background-color: #fefefe;
-$content-width:    750px;
+$content-width:    800px;
 $hover-color: #443E40;
 $legal-color: #818181;
 
 // Layout
-$layout-width: 750px;
+$layout-width: 800px;
 
 // Breakpoints
 $desktop-breakpoint: $layout-width / 0.9;

@@ -10,9 +10,9 @@ date: YYYY-MM-DD HH:MM:SS wew
         <li>
             <a href="{{ post.url }}">
                 <span class="left">
-                    <strong>{{ post.title }}</strong>
+                    {{ post.title }}
                 </span>
-                <span class="right">
+                <span class="date right">
                     <time datetime="{{ post.date | date_to_xmlschema }}">
                         {{ post.date | date: "%A, %B %-d, %Y" }}
                     </time>

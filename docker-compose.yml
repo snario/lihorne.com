@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    jekyll:
+        image: jekyll/builder:pages
+        working_dir: /home/app/www
+        command: jekyll serve
+        ports:
+            - 4000:4000
+        volumes:
+            - .:/home/app/www
