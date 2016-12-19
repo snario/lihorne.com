@@ -9,7 +9,7 @@ footer: true
 
 
 <div class="post-image">
-    <img src="http://i.imgur.com/efXOmio.png" alt="notes"/>
+    <img src="https://i.imgur.com/efXOmio.png" alt="notes"/>
 </div>
 
 I wrote these notes during my time at the University of Waterloo and am providing them to interested students and professors at absolutely no cost. Please [**let me know**](mailto:lihorne@uwaterloo.ca) if they've been helpful for you. Feel free to [**contribute**](https://github.com/snario/course_notes) too.

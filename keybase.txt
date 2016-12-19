@@ -4,7 +4,7 @@ https://keybase.io/liamhorne
 
 I hereby claim:
 
-  * I am an admin of http://lihorne.com
+  * I am an admin of https://lihorne.com
   * I am liamhorne (https://keybase.io/liamhorne) on keybase.
   * I have a public key with fingerprint 30FC 640B C0A3 51B2 FCB9  693F 7335 D28F BBFB 7CE7
 

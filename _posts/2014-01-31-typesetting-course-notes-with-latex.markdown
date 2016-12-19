@@ -9,7 +9,7 @@ categories: typesetting
 <!--* list element with functor item
 //{:toc}-->
 
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 
 #  Introduction
@@ -38,21 +38,21 @@ This can get really messy really quickly, but once you learn the basics of the l
 
 $$- \frac{\hbar}{2m} \frac{\partial^2 \Psi(x,t)}{\partial x^2} + U(x)\Psi(x,t) = i \hbar \frac{\partial \Psi(x,t)}{\partial t}$$
 
-If you're interested in learning the language and getting started using LaTeX, my advice would just be to force yourself to do an assignment using it or otherwise to write a report or paper with it. The best way to learn how to use it is to just dive right in and try your best to figure things out as you go. A quick way to do this would be to check out [writeLaTeX](http://www.writelatex.com), an online tool for writing LaTeX. If you're interested in an in-depth beginner's guide, try using [this one from Princeton University](http://www.cs.princeton.edu/courses/archive/spr10/cos433/Latex/latex-guide.pdf).
+If you're interested in learning the language and getting started using LaTeX, my advice would just be to force yourself to do an assignment using it or otherwise to write a report or paper with it. The best way to learn how to use it is to just dive right in and try your best to figure things out as you go. A quick way to do this would be to check out [writeLaTeX](https://www.writelatex.com), an online tool for writing LaTeX. If you're interested in an in-depth beginner's guide, try using [this one from Princeton University](https://www.cs.princeton.edu/courses/archive/spr10/cos433/Latex/latex-guide.pdf).
 
 
 #  Workflow
 
-Since typesetting my assignments for that Algebra course in my first term, I began writing my assignments for all of my other courses in LaTeX as well, and then in Fall 2013 decided to try to typeset not just all of my assignments, but all of my course notes too. Since LaTeX is so versatile, I was able to take notes of equations in calculus, graphs in combinatorics, and code in a few computer science courses. If you're interested in these notes or in an example of what a typeset document looks like, they're posted on this website [right here](http://lihorne.com/course-notes).
+Since typesetting my assignments for that Algebra course in my first term, I began writing my assignments for all of my other courses in LaTeX as well, and then in Fall 2013 decided to try to typeset not just all of my assignments, but all of my course notes too. Since LaTeX is so versatile, I was able to take notes of equations in calculus, graphs in combinatorics, and code in a few computer science courses. If you're interested in these notes or in an example of what a typeset document looks like, they're posted on this website [right here](https://lihorne.com/course-notes).
 
-To begin, I use the [MacTex distribution](http://tug.org/mactex/) (it really is 2.3GB, LaTeX is huge) on my computer. The way I manage to take notes is by using [Sublime Text](http://www.sublimetext.com/) with the PDF reader [Skim](http://skim-app.sourceforge.net/). There is a package for Sublime text called [LaTeXTools](https://github.com/SublimeText/LaTeXTools) which makes this setup really quick and easy. To install LaTeXTools you will need [Package Control](https://sublime.wbond.net/) for Sublime as well.
+To begin, I use the [MacTex distribution](https://tug.org/mactex/) (it really is 2.3GB, LaTeX is huge) on my computer. The way I manage to take notes is by using [Sublime Text](https://www.sublimetext.com/) with the PDF reader [Skim](https://skim-app.sourceforge.net/). There is a package for Sublime text called [LaTeXTools](https://github.com/SublimeText/LaTeXTools) which makes this setup really quick and easy. To install LaTeXTools you will need [Package Control](https://sublime.wbond.net/) for Sublime as well.
 
-Once everything is in order, you should be able to hit ⌘-B within Sublime Text on a `.tex` file and have it compile your code to PDF. Now, this post is meant to be about how to quickly take course notes using LaTex, so I'll go through a few methods I used to do that this semester and really quickly. First though, I'd like to mention that the main inspiration my course notes are the notes that [Michael Baker has on his website ](http://triple-involution.blogspot.ca/p/notes.html), for any pure mathematics students at the University of Waterloo, they are perfect.
+Once everything is in order, you should be able to hit ⌘-B within Sublime Text on a `.tex` file and have it compile your code to PDF. Now, this post is meant to be about how to quickly take course notes using LaTex, so I'll go through a few methods I used to do that this semester and really quickly. First though, I'd like to mention that the main inspiration my course notes are the notes that [Michael Baker has on his website ](https://triple-involution.blogspot.ca/p/notes.html), for any pure mathematics students at the University of Waterloo, they are perfect.
 
 
 #  Template
 
-When I started taking course notes, I knew that it would take a lot of time to deal with little templating issues such as dealing with sections and revisions, links to pages, definitions, theorems, counters, code, etc that would be a waste of time during class to fix. So, I made [this course notes template](http://www.github.com/snario/notes-template) which asks for only a little information and then lets you write away to actually copy down notes. For example,
+When I started taking course notes, I knew that it would take a lot of time to deal with little templating issues such as dealing with sections and revisions, links to pages, definitions, theorems, counters, code, etc that would be a waste of time during class to fix. So, I made [this course notes template](https://www.github.com/snario/notes-template) which asks for only a little information and then lets you write away to actually copy down notes. For example,
 
 {% highlight latex linenos %}
 \newcommand{\thiscoursecode}{MATH 136}
@@ -66,7 +66,7 @@ When I started taking course notes, I knew that it would take a lot of time to d
 produces this:
 
 <div class="post-image">
-    <img src="http://i.imgur.com/D6zKY1x.png" alt="notes"/>
+    <img src="https://i.imgur.com/D6zKY1x.png" alt="notes"/>
 </div>
 
 Hopefully this will be useful if you're trying to save time and get started right away. There are also many benefits of using this template, for example you can quickly make definitions or theorems from some settings in `notes.sty`, for example
@@ -118,7 +118,7 @@ You can also specify a different setting for something you set earlier if you wa
 
 ##  Graph Theory
 
-Trying to draw graphs in real time during class is definitely the most irritating part about using LaTeX, as there is no way of getting around the fact that it will just always be quicker to draw it by hand. If you'd still like to typeset them however, the best way to do it I found is to use [TikZ](http://cremeronline.com/LaTeX/minimaltikz.pdf). Essentially, you will have to define nodes on a 2D plane, then define connections between nodes. The best way to do this quickly is to define a macro within Sublime Text, something short like `grph` that when typed expands out to a skeleton for the graph. Without writing a cleaner solution, this is the quickest I could do it in class. An example of the Petersen graph:
+Trying to draw graphs in real time during class is definitely the most irritating part about using LaTeX, as there is no way of getting around the fact that it will just always be quicker to draw it by hand. If you'd still like to typeset them however, the best way to do it I found is to use [TikZ](https://cremeronline.com/LaTeX/minimaltikz.pdf). Essentially, you will have to define nodes on a 2D plane, then define connections between nodes. The best way to do this quickly is to define a macro within Sublime Text, something short like `grph` that when typed expands out to a skeleton for the graph. Without writing a cleaner solution, this is the quickest I could do it in class. An example of the Petersen graph:
 
 {% highlight latex linenos %}
 \begin{center}
@@ -143,7 +143,7 @@ Trying to draw graphs in real time during class is definitely the most irritatin
 Which produces a graph looking like:
 
 <div class="post-image">
-    <img src="http://i.imgur.com/pRrXGGE.png" alt="petersen"/>
+    <img src="https://i.imgur.com/pRrXGGE.png" alt="petersen"/>
 </div>
 
 You have the option of giving a node a label which would appear inside the circle, in this case the nodes don't have any. There are also a few special cases, for example with matchings or covers. You may want to specify a specific set of nodes to be coloured differently or a set of edges to be drawn with thick lines. These should be farely quick and easy with this method, for example a matching could be drawn with a second `\foreach` loop and the set of edges that are matching, then a `[line width=1mm]` tag.
@@ -165,7 +165,7 @@ If you ever take a course in logic, you will encounter natural deduction. One of
 Which produces a proof that looks like:
 
 <div class="post-image">
-    <img src="http://i.imgur.com/4zYNXnL.png" alt="nd"/>
+    <img src="https://i.imgur.com/4zYNXnL.png" alt="nd"/>
 </div>
 
 
@@ -213,7 +213,7 @@ $$DF(x_1, \ldots, x_n) = \begin{bmatrix}D_1F_1 \quad D_2F_1 \quad \cdots \quad D
 {% endhighlight %}
 
 <div class="post-image">
-    <img src="http://i.imgur.com/oRmKvZU.png" alt="borzoo"/>
+    <img src="https://i.imgur.com/oRmKvZU.png" alt="borzoo"/>
 </div>
 
-Okay, so I've tried to list as many helpful tools and resources for taking course notes using LaTeX that I've found or used in my experience with it, and I hope that these will be useful for anybody interested in trying out LaTeX in the future for their assignments, course notes, or any other document. It is a very powerful tool that can probably be used in every situation that you've encountered in school before where you had to write an essay, a paper, report, or even a presentation. Once you get the hang of it, you'll be able to make these sorts of documents much faster and much easier than before. For now, see [my course notes](http://www.lihorne.com/course-notes) if you're interested.
+Okay, so I've tried to list as many helpful tools and resources for taking course notes using LaTeX that I've found or used in my experience with it, and I hope that these will be useful for anybody interested in trying out LaTeX in the future for their assignments, course notes, or any other document. It is a very powerful tool that can probably be used in every situation that you've encountered in school before where you had to write an essay, a paper, report, or even a presentation. Once you get the hang of it, you'll be able to make these sorts of documents much faster and much easier than before. For now, see [my course notes](https://www.lihorne.com/course-notes) if you're interested.

@@ -17,7 +17,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lihorne.com" # the base hostname & protocol for your site
 
 # Picturefill
-# A responsive image polyfill: http://scottjehl.github.io/picturefill/
+# A responsive image polyfill: https://scottjehl.github.io/picturefill/
 picturefill: false
 
 # Typography
