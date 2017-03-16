@@ -18,7 +18,7 @@ navigation:
   url: /notes
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://lihorne.com" # the base hostname & protocol for your site
+url: "http://lihorne.com" # the base hostname & protocol for your site
 
 typekit_kit_id: emy7anq
 
