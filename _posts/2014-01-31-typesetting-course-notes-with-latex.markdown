@@ -12,7 +12,7 @@ categories: typesetting
 <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 
-#  Introduction
+## Introduction
 
 One of the first courses that a student in the Mathematics faculty at the University of Waterloo takes is MATH 135 / 145 (Algebra), a course in learning how to write concise mathematical proofs. The professor that directed this course decided in my year of taking it to provide `.tex` templates for students to use to typeset their assignments. I had never heard of or seen anyone use LaTeX before but thought I'd take a shot at it so I didn't have to write anything down for my first year Calculus and Algebra weekly assignments.
 
@@ -41,7 +41,7 @@ $$- \frac{\hbar}{2m} \frac{\partial^2 \Psi(x,t)}{\partial x^2} + U(x)\Psi(x,t) =
 If you're interested in learning the language and getting started using LaTeX, my advice would just be to force yourself to do an assignment using it or otherwise to write a report or paper with it. The best way to learn how to use it is to just dive right in and try your best to figure things out as you go. A quick way to do this would be to check out [writeLaTeX](https://www.writelatex.com), an online tool for writing LaTeX. If you're interested in an in-depth beginner's guide, try using [this one from Princeton University](https://www.cs.princeton.edu/courses/archive/spr10/cos433/Latex/latex-guide.pdf).
 
 
-#  Workflow
+##  Workflow
 
 Since typesetting my assignments for that Algebra course in my first term, I began writing my assignments for all of my other courses in LaTeX as well, and then in Fall 2013 decided to try to typeset not just all of my assignments, but all of my course notes too. Since LaTeX is so versatile, I was able to take notes of equations in calculus, graphs in combinatorics, and code in a few computer science courses. If you're interested in these notes or in an example of what a typeset document looks like, they're posted on this website [right here](https://lihorne.com/course-notes).
 
@@ -50,7 +50,7 @@ To begin, I use the [MacTex distribution](https://tug.org/mactex/) (it really is
 Once everything is in order, you should be able to hit ⌘-B within Sublime Text on a `.tex` file and have it compile your code to PDF. Now, this post is meant to be about how to quickly take course notes using LaTex, so I'll go through a few methods I used to do that this semester and really quickly. First though, I'd like to mention that the main inspiration my course notes are the notes that [Michael Baker has on his website ](https://triple-involution.blogspot.ca/p/notes.html), for any pure mathematics students at the University of Waterloo, they are perfect.
 
 
-#  Template
+##  Template
 
 When I started taking course notes, I knew that it would take a lot of time to deal with little templating issues such as dealing with sections and revisions, links to pages, definitions, theorems, counters, code, etc that would be a waste of time during class to fix. So, I made [this course notes template](https://www.github.com/snario/notes-template) which asks for only a little information and then lets you write away to actually copy down notes. For example,
 
@@ -81,7 +81,7 @@ together with a set $E(G)$ of unordered pairs of distinct vertices.
 The argument inside the square brackets will be the official name of whatever you're defining, and the `\label{graph}` part defines a quick and unique label for you to use as reference later in the document. For example, if I want to reference back (create a link to) the definition of a graph, then I would write `\nameref{graph}` and a link would be typeset.
 
 
-##  Code
+###  Code
 
 When it comes to typesetting code, the best package to use is called [Listings](ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf), which offers all sort of customization for ways to display code. To start, define your favourite style with `lstset`, you can customize the language it recognizes, any borderes, line numbers, styles for different types of code, background colours and much more.
 
@@ -116,7 +116,7 @@ Then, inside your main document, write code inside a `lstlistings` block:
 
 You can also specify a different setting for something you set earlier if you want a one-time code block setting. The package handles syntax colouring by having a list of keywords saved for the many languages it supports, you can also add additional keywords if you'd like.
 
-##  Graph Theory
+###  Graph Theory
 
 Trying to draw graphs in real time during class is definitely the most irritating part about using LaTeX, as there is no way of getting around the fact that it will just always be quicker to draw it by hand. If you'd still like to typeset them however, the best way to do it I found is to use [TikZ](https://cremeronline.com/LaTeX/minimaltikz.pdf). Essentially, you will have to define nodes on a 2D plane, then define connections between nodes. The best way to do this quickly is to define a macro within Sublime Text, something short like `grph` that when typed expands out to a skeleton for the graph. Without writing a cleaner solution, this is the quickest I could do it in class. An example of the Petersen graph:
 
@@ -148,7 +148,7 @@ Which produces a graph looking like:
 
 You have the option of giving a node a label which would appear inside the circle, in this case the nodes don't have any. There are also a few special cases, for example with matchings or covers. You may want to specify a specific set of nodes to be coloured differently or a set of edges to be drawn with thick lines. These should be farely quick and easy with this method, for example a matching could be drawn with a second `\foreach` loop and the set of edges that are matching, then a `[line width=1mm]` tag.
 
-##  Natural Deduction
+###  Natural Deduction
 
 If you ever take a course in logic, you will encounter natural deduction. One of the most common notations for natural deduction is called 'flag-notation' and the best way to mimic that notation in LaTeX is to use a package called [Flagderiv](https://svn.win.tue.nl/trac/fmlatex/wiki/Package/Flagderiv). The syntax looks a little like this:
 
@@ -169,7 +169,7 @@ Which produces a proof that looks like:
 </div>
 
 
-##  Other Things
+###  Other Things
 
 There are a lot of little things in LaTeX that might take some time when you're typesetting a report or course notes, and there's no way to cover all of them but here are a few that might be helpful:
 
