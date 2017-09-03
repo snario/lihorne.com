@@ -1,0 +1,19 @@
+{
+  "name": {
+    "description": "Liam's personal website",
+    "twitter:card": null,
+    "twitter:site": "@liamihorne",
+    "twitter:title": null,
+    "twitter:description": null,
+    "twitter:url": null,
+    "twitter:image": null
+  },
+  "property": {
+    "og:site_name": "Liam's personal website",
+    "og:type": "website",
+    "og:url": "https://lihorne.com/",
+    "og:title": null,
+    "og:description": "Liam's personal website",
+    "og:image": null
+  }
+}

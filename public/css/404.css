@@ -1,0 +1,10 @@
+@import url('reset.css');
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #0f0f0f;
+  height: 100%;
+}

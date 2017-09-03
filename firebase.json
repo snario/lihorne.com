@@ -1,0 +1,61 @@
+{
+    "hosting": {
+        "redirects": [
+            {
+                "source": "/linkedin", 
+                "destination": "https://www.linkedin.com/in/liamhorne/", 
+                "type": 302
+            }, 
+            {
+                "source": "/facebook", 
+                "destination": "https://www.facebook.com/lihorne", 
+                "type": 302
+            }, 
+            {
+                "source": "/keybase", 
+                "destination": "https://keybase.io/liamhorne", 
+                "type": 301
+            }, 
+            {
+                "source": "/github", 
+                "destination": "https://github.com/snario", 
+                "type": 301
+            }, 
+            {
+                "source": "twitter", 
+                "destination": "https://twitter.com/liamihorne", 
+                "type": 301
+            }
+        ], 
+        "rewrites": [
+            {
+                "source": "/resources", 
+                "destination": "/86298f2493f54a829c6623eb34fc174e.html"
+            }, 
+            {
+                "source": "/readings", 
+                "destination": "/a062297a1c2a42c3af0e86f3c8d9ef16.html"
+            }, 
+            {
+                "source": "/links", 
+                "destination": "/5195064e3a9f4118b6897df3f5122ac0.html"
+            }, 
+            {
+                "source": "/", 
+                "destination": "/cd7da5ccdff74644aaa01cd14231024c.html"
+            }, 
+            {
+                "source": "/about", 
+                "destination": "/dae4b93feccc462387b039fe9eb152df.html"
+            }, 
+            {
+                "source": "/books", 
+                "destination": "/eed6d1fc156d4c7aa7ec9344234d5e11.html"
+            }
+        ], 
+        "public": "public"
+    }, 
+    "database": {
+        "rules": "database.rules.json"
+    }
+}
