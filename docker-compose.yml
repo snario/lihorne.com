@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+    scraper:
+        build: .
+        command: ./bin/deploy
+        env_file:
+            - ./.env
+        links:
+            - selenium
+        volumes:
+            - .:/home
+
+    selenium:
+        image: selenium/standalone-chrome
+        ports:
+            - 4444

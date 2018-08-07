@@ -29,28 +29,24 @@
         ], 
         "rewrites": [
             {
-                "source": "/resources", 
-                "destination": "/86298f2493f54a829c6623eb34fc174e.html"
-            }, 
-            {
-                "source": "/readings", 
-                "destination": "/a062297a1c2a42c3af0e86f3c8d9ef16.html"
-            }, 
-            {
-                "source": "/links", 
-                "destination": "/5195064e3a9f4118b6897df3f5122ac0.html"
+                "source": "/whoami", 
+                "destination": "/dae4b93feccc462387b039fe9eb152df.html"
             }, 
             {
                 "source": "/", 
                 "destination": "/cd7da5ccdff74644aaa01cd14231024c.html"
             }, 
             {
-                "source": "/about", 
-                "destination": "/dae4b93feccc462387b039fe9eb152df.html"
+                "source": "/links", 
+                "destination": "/5195064e3a9f4118b6897df3f5122ac0.html"
             }, 
             {
-                "source": "/books", 
-                "destination": "/eed6d1fc156d4c7aa7ec9344234d5e11.html"
+                "source": "/photos", 
+                "destination": "/a0395696e0d84e3ba23382913b559877.html"
+            }, 
+            {
+                "source": "/projects", 
+                "destination": "/ce00a590494c4be2aa555bb0162303eb.html"
             }
         ], 
         "public": "public"

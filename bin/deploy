@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+python scraper/run.py \
+    --notion-root cd7da5ccdff74644aaa01cd14231024c \
+    --firebase-path www \
+    --meta-json-path www/meta.json
