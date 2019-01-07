@@ -5,3 +5,4 @@ www/public/*.html
 !www/public/404.html
 *.pyc
 .env
+*.cache
