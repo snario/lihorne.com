@@ -29,7 +29,7 @@
         ], 
         "rewrites": [
             {
-                "source": "/whoami", 
+                "source": "/about", 
                 "destination": "/dae4b93feccc462387b039fe9eb152df.html"
             }, 
             {
@@ -41,7 +41,7 @@
                 "destination": "/5195064e3a9f4118b6897df3f5122ac0.html"
             }, 
             {
-                "source": "/photos", 
+                "source": "/photography", 
                 "destination": "/a0395696e0d84e3ba23382913b559877.html"
             }, 
             {
