@@ -1,2 +1,2 @@
 selenium
-pickledb
+pickledb==0.6.2
