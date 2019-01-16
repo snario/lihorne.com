@@ -47,6 +47,10 @@
             {
                 "source": "/projects", 
                 "destination": "/ce00a590494c4be2aa555bb0162303eb.html"
+            }, 
+            {
+                "source": "/books", 
+                "destination": "/1d51857c77c7419788ed25353fc04676.html"
             }
         ], 
         "public": "public"
