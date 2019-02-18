@@ -49,7 +49,7 @@ def dump_results(results, results_path='./results'):
             handle.write(html.encode('utf8'))
 
 
-def postprocess(results_path='./results', rewrite_db_path='../rewrite.db'):
+def postprocess(results_path='./results', rewrite_db_path='./scraper/rewrite.db'):
     pages = [
         page.replace('.html', '') for page in os.listdir(results_path)
         if '.html' in page and len(page) == 32+5]
@@ -75,7 +75,7 @@ def postprocess(results_path='./results', rewrite_db_path='../rewrite.db'):
             handle.write(processed_html.encode('utf8'))
 
 
-def generate_rewrites(results_path='./results', rewrite_db_path='../rewrite.db'):
+def generate_rewrites(results_path='./results', rewrite_db_path='./scraper/rewrite.db'):
     rewrites = []
     pages = [
         page.replace('.html', '') for page in os.listdir(results_path)
