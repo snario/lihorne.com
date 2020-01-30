@@ -127,11 +127,11 @@ def scrape_notion_page(page_id, meta_json={}):
 
     print 'page title:', driver.title
 
-    login_element = driver.find_element_by_xpath('//a[@href="/login"]')
+    topbar_element = driver.find_element_by_xpath('//div[@class="notion-topbar"]')
     script_elements = driver.find_elements_by_xpath('//script')
     noscript_elements = driver.find_elements_by_xpath('//noscript')
 
-    for element in [login_element] + script_elements + noscript_elements:
+    for element in [topbar_element] + script_elements + noscript_elements:
         delete_element(element)
 
     notion_pages_encountered = []
