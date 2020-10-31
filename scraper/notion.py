@@ -116,7 +116,7 @@ def overwrite_meta_elements(meta_json):
 def scrape_notion_page(page_id, meta_json={}):
     driver = get_driver()
     driver.get('https://www.notion.so/' + page_id)
-    time.sleep(10)
+    time.sleep(3)
     # should change this to instead use expected_conditions or webdriverwait
     # but it's so messy to wait on react rendering...
 
