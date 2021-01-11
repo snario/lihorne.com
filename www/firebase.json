@@ -29,12 +29,8 @@
         ], 
         "rewrites": [
             {
-                "source": "/about", 
-                "destination": "/dae4b93feccc462387b039fe9eb152df.html"
-            }, 
-            {
-                "source": "/", 
-                "destination": "/cd7da5ccdff74644aaa01cd14231024c.html"
+                "source": "/books", 
+                "destination": "/1d51857c77c7419788ed25353fc04676.html"
             }, 
             {
                 "source": "/photography", 
@@ -45,12 +41,16 @@
                 "destination": "/ab26e4cececb4ded898c8d5ac98909d9.html"
             }, 
             {
+                "source": "/", 
+                "destination": "/cd7da5ccdff74644aaa01cd14231024c.html"
+            }, 
+            {
                 "source": "/projects", 
                 "destination": "/ce00a590494c4be2aa555bb0162303eb.html"
             }, 
             {
-                "source": "/books", 
-                "destination": "/1d51857c77c7419788ed25353fc04676.html"
+                "source": "/about", 
+                "destination": "/dae4b93feccc462387b039fe9eb152df.html"
             }
         ], 
         "public": "public"
